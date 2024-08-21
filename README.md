@@ -14,7 +14,7 @@ This repository contains the design and implementation of an Asynchronous First-
 The asynchronous FIFO is designed to safely pass data between two clock domains by using Gray-coded pointers and synchronizing them across clock boundaries. The FIFO manages its own memory, write pointer, and read pointer, ensuring that data is stored and retrieved without loss or corruption.
 
 # Key Concepts:
-1.Write Pointer: Tracks the memory location where new data should be written.
-2.Read Pointer: Tracks the memory location where data should be read.
-3.Gray Code: The use of Gray code for pointers reduces the risk of errors during pointer synchronization between clock domains.
-4.Synchronization: Cross-domain synchronization ensures that the write pointer is safely read in the read clock domain and vice versa.
+1. Write Pointer: Tracks the memory location where new data should be written.
+2. Read Pointer: Tracks the memory location where data should be read.
+3. Gray Code: The use of Gray code for pointers reduces the risk of errors during pointer synchronization between clock domains.
+4. Synchronization: Cross-domain synchronization ensures that the write pointer is safely read in the read clock domain and vice versa.
